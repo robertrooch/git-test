@@ -1,0 +1,70 @@
+/* Variables de color de la guía de estilos */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+}
+
+/* Reset básico para que los márgenes sean predecibles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--slate-300);
+  font-size: 15px; /* Tamaño base de la guía de estilos */
+  
+  /* Flexbox para centrar todo en la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Contenedor principal: La Tarjeta Blanca */
+.qr-card {
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 20px;
+  max-width: 320px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  text-align: center;
+  margin-bottom: 30px; /* Separación con el texto inferior de attribution */
+}
+
+/* La imagen del código QR */
+.qr-image {
+  width: 100%;
+  border-radius: 10px; /* Bordes redondeados también para la imagen */
+  display: block;
+}
+
+/* Contenedor para dar espacio a los textos */
+.qr-content {
+  padding: 24px 16px 20px;
+}
+
+/* El título principal */
+.qr-title {
+  color: var(--slate-900);
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+/* El párrafo de descripción */
+.qr-description {
+  color: var(--slate-500);
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  letter-spacing: 0.2px;
+}
